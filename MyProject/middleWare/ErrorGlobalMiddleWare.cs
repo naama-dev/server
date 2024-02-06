@@ -18,8 +18,7 @@ namespace MyProject.middleWare
             try
             {
                 await _next(httpContext);
-            }
-            catch (Exception ex)
+            }catch (Exception ex)
             {
                 Log.Error("message: " + ex.Message);
             }
