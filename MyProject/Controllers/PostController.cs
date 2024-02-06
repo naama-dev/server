@@ -46,7 +46,7 @@ namespace MyProject.Controllers
         }
         [HttpPut]
         [Route("/post-put-Like{id}")]
-        public async Task<ActionResult> PutToDoIsComplete(int id)
+        public async Task<ActionResult> PutLike(int id)
         {
             await _post.IsLikePost(id);
             return Ok();
